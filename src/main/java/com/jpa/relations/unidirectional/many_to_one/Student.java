@@ -1,7 +1,5 @@
 package com.jpa.relations.unidirectional.many_to_one;
 
-import java.util.List;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
