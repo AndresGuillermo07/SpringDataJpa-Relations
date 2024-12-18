@@ -9,10 +9,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity(name = "uni_School_many_to_one")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity(name = "uni_School_many_to_one")
 @Table(name = "uni_School_many_to_one")
 public class School {
 
