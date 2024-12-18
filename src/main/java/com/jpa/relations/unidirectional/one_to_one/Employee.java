@@ -22,7 +22,7 @@ public class Employee {
     private Long id;
 
     @OneToOne
-    @JoinColumn(name = "parking_spo")
+    @JoinColumn(name = "parking_spot_id")
     private ParkingSpot parkingSpot;
     
 }
