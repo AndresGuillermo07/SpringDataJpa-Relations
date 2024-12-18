@@ -1,4 +1,4 @@
-package com.jpa.relations.unidirectional.many_to_many;
+package com.jpa.relations.bidirectional.many_to_many;
 
 import java.util.List;
 
@@ -17,8 +17,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "uni_Book_many_to_one")
-@Table(name = "uni_Book_many_to_one")
+@Entity(name = "bi_Book_many_to_many")
+@Table(name = "bi_Book_many_to_many")
 public class Book {
 
     @Id
@@ -26,9 +26,9 @@ public class Book {
     private Long id;
 
     @ManyToMany
-    @JoinTable(name = "book_author_unidirectional",
+    @JoinTable(name = "book_author_bidirectional",
         joinColumns= @JoinColumn(name="book_id"),
         inverseJoinColumns = @JoinColumn(name="author_id")
     )
-    private List<Author> authors;
+    private List<Author> authorList;
 }
